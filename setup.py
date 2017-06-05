@@ -29,7 +29,7 @@ for f in sorted(os.listdir(IN_DIR)):
 
 # 訓練データの各ディレクトリからランダムに15枚を検証データとする
 for d in os.listdir(TRAIN_DIR):
-    path = os.path.join('input', 'processed', 'train1', d, '*.jpg')
+    path = os.path.join('input', 'processed', 'train', d, '*.jpg')
     files = sorted(glob.glob(path))
     random.shuffle(files)
     for f in files[:15]:
